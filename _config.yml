@@ -10,7 +10,7 @@ url: 'https://garethpowell.github.io'
 
 description: A beautiful Jekyll theme for creating resume
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: berry # blue turquoise green berry orange ceramic
+theme_skin: mosaic # blue turquoise green berry orange ceramic or mosaic
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
@@ -31,6 +31,6 @@ compress_html: # - http://jch.penibelst.de/
     envs: development
 
 # Development Settings
-port: 4000
+port: 4001
 host: 0.0.0.0
 safe: false
