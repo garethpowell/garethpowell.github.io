@@ -12,7 +12,7 @@ sidebar:
     avatar: profile.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: gareth.powell@mosaicisland.co.uk
+    email: gareth@mosaicisland.co.uk
     phone:
     timezone: London/UK Timezone
     citizenship:
@@ -213,23 +213,23 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
-
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
+      - name: Java
         level: 95%
 
-      - name: Ruby on Rails
-        level: 85%
+      - name: Kotlin
+        level: 50%
 
-      - name: Sketch & Photoshop
+      - name: AWS
         level: 60%
+
+      - name: HTML5 & CSS
+        level: 40%
+
+      - name: Terraform
+        level: 45%
+
+      - name: Linux
+        level: 50%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
