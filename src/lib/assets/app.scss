@@ -1,0 +1,21 @@
+@use "./tokens" as *;
+
+//@import 'tailwindcss';
+@import "./Jetbrains-Mono.css";
+
+//@plugin '@tailwindcss/forms';
+//@plugin '@tailwindcss/typography';
+
+* {
+    box-sizing: border-box
+}
+html {
+    scroll-behavior: smooth
+}
+body {
+    margin: 0;
+    font-family: JetBrains Mono, ui-monospace, ui-sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.6
+}

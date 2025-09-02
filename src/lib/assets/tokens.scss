@@ -1,0 +1,46 @@
+@use "sass:color";
+
+
+/* Brand palette */
+$indigo-900: #1E1E3F;
+
+$green-500: #00A878;
+
+$white-50: #F5F7FA;
+
+$gray-600: #5A6772;
+
+$orange-500: #FF6B35;
+
+$blue-400: #3DA9FC;
+
+$purple-400: #A882DD;
+
+:root {
+    --indigo-900: #{$indigo-900};
+    --green-500: #{$green-500};
+    --white-50: #{$white-50};
+    --gray-600: #{$gray-600};
+    --orange-500: #{$orange-500};
+    --blue-400: #{$blue-400};
+    --purple-400: #{$purple-400};
+
+    --bg: #{$white-50};
+    --fg: #{$indigo-900};
+    --muted: #{$gray-600};
+    --surface: #FFFFFF;
+    --elev: #FFFFFF;
+    --border: #{color.mix($indigo-900, #FFFFFF, 10%)};
+    --shadow: 0 6px 18px rgba(0, 0, 0, .12);
+    --radius: 12px;
+}
+
+[data-theme="dark"] {
+    --bg: #{$indigo-900};
+    --fg: #{color.mix($white-50,$indigo-900,80%)};
+    --muted: #{color.mix($white-50,$indigo-900,80%)};
+    --surface: #{color.mix($white-50,$indigo-900,6%)};
+    --elev: #{color.mix($white-50,$indigo-900,12%)};
+    --border: #{color.mix($white-50,$indigo-900,18%)};
+    --shadow: 0 12px 28px rgba(0, 0, 0, .24);
+}
