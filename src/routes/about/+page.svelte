@@ -1,0 +1,38 @@
+<svelte:head>
+    <title>About</title>
+    <meta name="description" content="About Clean Code Solutions & Gareth Powell"/>
+</svelte:head>
+
+<script lang="ts">
+
+</script>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-4">
+            <a href="https://www.mosaicisland.co.uk" target="_blank" aria-label="Gareth Powell">
+                <img src="gareth_powell.png" class="d-block mx-lg-auto img-fluid rounded mx-auto d-block"
+                     alt="Gareth Powell" width="300" loading="lazy">
+            </a>
+        </div>
+        <div class="col-lg-8">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Clean Code Solutions</h1>
+            <p class="lead">
+                Gareth (Gaz) Powell — Principal Software Engineer specialising in JVM ecosystems and secure,
+                regulated environments. I lead design and delivery end‑to‑end: data, APIs, batch, UI, and
+                infrastructure, with a pragmatic and security‑first approach.
+
+                I champion clean code, static analysis, automation, and measurable outcomes. I’ve modernised
+                legacy estates, driven cloud migrations, and instituted robust CI/CD with quality gates.
+            </p>
+            <br/>
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Education</h1>
+            <p class="lead">
+                Lancaster University
+            </p>
+            <p class="lead">
+                — BSc Computer Science with Software Engineering (1999)
+            </p>
+        </div>
+    </div>
+</div>

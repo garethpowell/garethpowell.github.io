@@ -10,7 +10,8 @@
                 <div class="card-body">
                     <h5 class="card-title">AWS Migration & Modernisation</h5>
                     <p class="card-text">
-                        Design and execute secure, low‑risk migration paths to AWS with blue/green and automated rollback.
+                        Design and execute secure, low‑risk migration paths to AWS with blue/green and automated
+                        rollback.
                     </p>
                     <ul class="card-text">
                         <li>VPC/EC2 design, IaC (Terraform/Ansible/CDK)</li>
@@ -103,16 +104,59 @@
             </div>
         </div>
     </div>
+    <div class="row g-lg-5 py-5">
+        <div class="col-12">
+
+            <div class="card text-bg-secondary mb-3">
+                <div class="card-header">Pragmatic, security‑minded engineering leadership and delivery</div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card text-bg-primary mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Core Stack</h5>
+                                        <p class="card-text">Kotlin/Java, Spring Boot, Integration & Batch, Hibernate</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-bg-info mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cloud & Platform</h5>
+                                        <p class="card-text">AWS (VPC/EC2, Lambda, Elastic Beanstalk), Docker, Terraform,
+                                            Ansible, CDK</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card text-bg-success mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Build & CI</h5>
+                                        <p class="card-text">Gradle (Kotlin DSL), GitHub Actions, TeamCity, Sonar/Qodana,
+                                            Flyway, Testcontainers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <style>
     .card-header {
-        color: var(--blue-400);
+        color: var(--white-50);
     }
+
     .card-title {
-        color: var(--purple-400);
+        color: var(--indigo-900);
         font-size: 1.0rem;
     }
+
     .card-text {
         font-size: 0.9rem;
     }

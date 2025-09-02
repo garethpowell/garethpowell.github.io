@@ -26,20 +26,23 @@
 
     <Nav class="ms-auto" navbar>
         <NavItem>
-            <NavLink href="#components/">Components</NavLink>
+            <NavLink href="/experience">Experience</NavLink>
         </NavItem>
         <NavItem>
-            <NavLink href="https://github.com/sveltestrap/sveltestrap">GitHub</NavLink>
+            <NavLink href="/about">About</NavLink>
         </NavItem>
-        <Dropdown nav inNavbar>
-            <DropdownToggle nav caret>Options</DropdownToggle>
-            <DropdownMenu end>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider/>
-                <DropdownItem>Reset</DropdownItem>
-            </DropdownMenu>
-        </Dropdown>
+        <NavItem>
+            <NavLink href="/contact">Contact</NavLink>
+        </NavItem>
+<!--        <Dropdown nav inNavbar>-->
+<!--            <DropdownToggle nav caret>Options</DropdownToggle>-->
+<!--            <DropdownMenu end>-->
+<!--                <DropdownItem>Option 1</DropdownItem>-->
+<!--                <DropdownItem>Option 2</DropdownItem>-->
+<!--                <DropdownItem divider/>-->
+<!--                <DropdownItem>Reset</DropdownItem>-->
+<!--            </DropdownMenu>-->
+<!--        </Dropdown>-->
     </Nav>
 
 </Navbar>

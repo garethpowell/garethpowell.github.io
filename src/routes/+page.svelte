@@ -4,8 +4,11 @@
 <script lang="ts">
     import Hero from "./content/Hero.svelte";
     import Services from "./content/Services.svelte";
+    import Quotes from "./content/Quotes.svelte";
 </script>
 
 <Hero />
 
 <Services />
+
+<Quotes />
