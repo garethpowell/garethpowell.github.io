@@ -35,7 +35,7 @@ $purple-400: #A882DD;
     --radius: 12px;
 }
 
-[data-theme="dark"] {
+[data-bs-theme="dark"] {
     --bg: #{$indigo-900};
     --fg: #{color.mix($white-50,$indigo-900,80%)};
     --muted: #{color.mix($white-50,$indigo-900,80%)};
