@@ -1,6 +1,6 @@
 <script lang="ts">
     import {page} from '$app/state';
-    import { base } from '$app/paths';
+    import { resolve } from '$app/paths';
 </script>
 
 <div class="container col-xxl-8 px-4 py-5">
@@ -16,7 +16,7 @@
                 <p>* Press CTRL+ALT+DEL to restart your computer. You will</p>
                 <p>&nbsp;&nbsp;lose any unsaved information in all applications.</p>
             </div>
-            <a href={base + '/'} class="home-link">Return to Home Page</a>
+            <a href={resolve('/')} class="home-link">Return to Home Page</a>
         </div>
     </div>
 </div>

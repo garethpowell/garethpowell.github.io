@@ -1,6 +1,6 @@
 <svelte:head>
-    <title>About</title>
-    <meta name="description" content="About Clean Code Solutions & Gareth Powell"/>
+    <title>Contact Clean Code Solutions</title>
+    <meta name="description" content="Contact Clean Code Solutions"/>
 </svelte:head>
 
 <script lang="ts">
@@ -17,7 +17,7 @@
                 For contract availability, reach out directly.
             </p>
             <Form action="https://forms.un-static.com/forms/3df9195493c0adec60bca6916728620901752777" method="post"
-                  {validated} on:submit={(e) => e.preventDefault()}>
+                  {validated} >
                 <FormGroup>
                     <Label for="inputEmail">Email</Label>
                     <Input type="email" name="email" id="inputEmail" placeholder="joe.bloggs@example.com" required />

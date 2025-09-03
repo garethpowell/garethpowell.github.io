@@ -4,16 +4,14 @@
 </svelte:head>
 
 <script lang="ts">
-
+    import {resolve} from "$app/paths";
 </script>
 
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-4">
-            <a href="https://www.mosaicisland.co.uk" target="_blank" aria-label="Gareth Powell">
-                <img src="gareth_powell.png" class="d-block mx-lg-auto img-fluid rounded mx-auto d-block"
+            <img src="gareth_powell.png" class="d-block mx-lg-auto img-fluid rounded mx-auto d-block"
                      alt="Gareth Powell" width="300" loading="lazy">
-            </a>
         </div>
         <div class="col-lg-8">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Clean Code Solutions</h1>
@@ -26,12 +24,15 @@
                 legacy estates, driven cloud migrations, and instituted robust CI/CD with quality gates.
             </p>
             <br/>
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Education</h1>
+            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Education</h2>
             <p class="lead">
                 Lancaster University
             </p>
             <p class="lead">
                 — BSc Computer Science with Software Engineering (1999)
+            </p>
+            <p>
+                <a href="{resolve('/cv/Gareth_Powell_CV_2025.pdf')}" class="btn btn-info">Download my CV</a>
             </p>
         </div>
     </div>

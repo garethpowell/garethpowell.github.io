@@ -1,49 +1,25 @@
 <script lang="ts">
     import {
-        Collapse,
-        NavbarToggler,
         NavbarBrand,
         Nav,
         Navbar,
         NavItem,
         NavLink,
-        Dropdown,
-        DropdownToggle,
-        DropdownMenu,
-        DropdownItem
     } from '@sveltestrap/sveltestrap';
-    import { base } from '$app/paths';
-
-    let isOpen = false;
-
-    function handleUpdate(event) {
-        isOpen = event.detail.isOpen;
-    }
+    import {resolve} from '$app/paths';
 </script>
 
 <Navbar color="light" light expand="md" container="md">
-    <NavbarBrand href={base + '/'}>Clean Code Solutions</NavbarBrand>
-    <NavbarToggler on:click={() => (isOpen = !isOpen)}/>
-
+    <NavbarBrand href={resolve('/')}>Clean Code Solutions</NavbarBrand>
     <Nav class="ms-auto" navbar>
         <NavItem>
-            <NavLink href={base + '/experience'}>Experience</NavLink>
+            <NavLink href={resolve('/experience')}>Experience</NavLink>
         </NavItem>
         <NavItem>
-            <NavLink href={base + '/about'}>About</NavLink>
+            <NavLink href={resolve('/about')}>About</NavLink>
         </NavItem>
         <NavItem>
-            <NavLink href={base + '/contact'}>Contact</NavLink>
+            <NavLink href={resolve('/contact')}>Contact</NavLink>
         </NavItem>
-<!--        <Dropdown nav inNavbar>-->
-<!--            <DropdownToggle nav caret>Options</DropdownToggle>-->
-<!--            <DropdownMenu end>-->
-<!--                <DropdownItem>Option 1</DropdownItem>-->
-<!--                <DropdownItem>Option 2</DropdownItem>-->
-<!--                <DropdownItem divider/>-->
-<!--                <DropdownItem>Reset</DropdownItem>-->
-<!--            </DropdownMenu>-->
-<!--        </Dropdown>-->
     </Nav>
-
 </Navbar>
