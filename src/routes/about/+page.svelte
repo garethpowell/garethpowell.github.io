@@ -4,6 +4,7 @@
 </svelte:head>
 
 <script lang="ts">
+    let CVFile = "Gareth_Powell_CV_2025.pdf";
     import {resolve} from "$app/paths";
 </script>
 
@@ -32,7 +33,7 @@
                 — BSc Computer Science with Software Engineering (1999)
             </p>
             <p>
-                <a href="/cv/Gareth_Powell_CV_2025.pdf" class="btn btn-info">Download my CV</a>
+                <a href={`/cv/ + ${CVFile}`} class="btn btn-info">Download my CV</a>
             </p>
         </div>
     </div>
