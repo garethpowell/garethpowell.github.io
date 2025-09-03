@@ -1,0 +1,36 @@
+<svelte:head>
+    <title>About</title>
+    <meta name="description" content="About Clean Code Solutions & Gareth Powell"/>
+</svelte:head>
+
+<script lang="ts">
+    import Fa from 'svelte-fa'
+    import {faHomeUser} from '@fortawesome/free-solid-svg-icons'
+</script>
+
+<div class="container col-xxl-12 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Thank you!</h4>
+                    <p>Your interest in engaging Clean Code Solutions in your software development project is much appreciated.
+                        We will be in touch.</p>
+                    <hr>
+                    <p class="mb-0">
+                        <a href="/" class="btn btn-primary"><Fa icon="{faHomeUser}" /> Back to Home</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+</div>
+
+
+
+<style>
+</style>

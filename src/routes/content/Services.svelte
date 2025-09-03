@@ -104,10 +104,14 @@
             </div>
         </div>
     </div>
+
+<!--    <hr class="border border-warning border-3 opacity-75">-->
+
     <div class="row g-lg-5 py-5">
         <div class="col-12">
 
-            <div class="card text-bg-secondary mb-3">
+            <div class="card mb-3">
+<!--            <div class="card text-bg-secondary mb-3">-->
                 <div class="card-header">Pragmatic, security‑minded engineering leadership and delivery</div>
                 <div class="card-body">
                     <div class="container">
@@ -149,11 +153,11 @@
 
 <style>
     .card-header {
-        color: var(--white-50);
+        color: var(--orange-500);
     }
 
     .card-title {
-        color: var(--indigo-900);
+        color: var(--white-50);
         font-size: 1.0rem;
     }
 

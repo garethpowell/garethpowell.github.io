@@ -23,8 +23,8 @@
                 <input type="email" class="form-control" id="contactUsEmail" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label for="contactUsPhone" class="form-label">Email address</label>
-                <input type="tel" class="form-control" id="contactUsPhone" placeholder="name@example.com">
+                <label for="contactUsPhone" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="contactUsPhone" >
             </div>
             <div class="mb-3">
                 <label for="contactUsMessage" class="form-label">Message</label>
@@ -32,7 +32,6 @@
             </div>
             <div class="mb-3">
                 <button type="submit" class="btn btn-primary">Send</button>
-                <a href="mailto:gareth@cleancode.uk" class="btn btn-secondary">Email Directly</a>
             </div>
         </div>
         <div class="col-md-6">
