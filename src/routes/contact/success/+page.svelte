@@ -6,6 +6,7 @@
 <script lang="ts">
     import Fa from 'svelte-fa'
     import {faHomeUser} from '@fortawesome/free-solid-svg-icons'
+    import { base } from '$app/paths';
 </script>
 
 <div class="container col-xxl-12 px-4 py-5">
@@ -20,7 +21,7 @@
                         We will be in touch.</p>
                     <hr>
                     <p class="mb-0">
-                        <a href="/" class="btn btn-primary"><Fa icon="{faHomeUser}" /> Back to Home</a>
+                        <a href={base + '/'} class="btn btn-primary"><Fa icon={faHomeUser} /> Back to Home</a>
                     </p>
                 </div>
 
