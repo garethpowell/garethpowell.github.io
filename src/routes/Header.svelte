@@ -10,7 +10,9 @@
 </script>
 
 <Navbar color="light" light expand="md" container="md">
-    <NavbarBrand href={resolve('/')}>Clean Code Solutions</NavbarBrand>
+    <NavbarBrand href={resolve('/')}>
+        <img src="ccs-logo.webp" alt="Clean Code Solutions Logo" height="48"> Clean Code Solutions
+    </NavbarBrand>
     <Nav class="ms-auto" navbar>
         <NavItem>
             <NavLink href={resolve('/experience')}>Experience</NavLink>

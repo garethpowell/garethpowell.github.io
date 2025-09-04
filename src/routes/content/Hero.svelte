@@ -9,8 +9,9 @@
                 Clean Code Solutions
             </h1>
             <p class="col-lg-10 fs-4">
-                Seasoned Principal Software Engineer with 20+ years delivering secure, high‑impact JVM and cloud
-                solutions. Available for contract engagements.
+                Seasoned professional Software Engineer with 20+ years delivering secure, high‑impact JVM & cloud
+                solutions.
+                I'm based in Cardiff, South Wales and available for contract engagements, preferably remote or hybrid.
             </p>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
@@ -20,8 +21,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Value proposition</h5>
                         <ul class=" card-text text-body-secondary">
-                            <li>End‑to‑end delivery across data, APIs, batch, UI and infra</li>
-                            <li>Cloud migration & modernisation on AWS with security baked in</li>
+                            <li>End‑to‑end delivery across data, APIs, batch, UI, and infra</li>
+                            <li>Cloud migration and modernisation on AWS with security baked in</li>
                             <li>CI/CD, quality gates, and platform hardening for regulated domains</li>
                             <li>Pragmatic leadership, mentoring, and measurable outcomes</li>
                         </ul>

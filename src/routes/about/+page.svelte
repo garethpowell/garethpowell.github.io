@@ -33,7 +33,7 @@
                 — BSc Computer Science with Software Engineering (1999)
             </p>
             <p>
-                <a href={resolve('/cv/' + CVFile)} class="btn btn-info">Download my CV</a>
+                <a href={resolve('/cv/' + CVFile)} class="btn btn-info" download aria-label="Download CV for Gareth Powell">Download my CV</a>
             </p>
         </div>
     </div>
