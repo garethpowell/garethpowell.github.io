@@ -93,30 +93,11 @@
                             to us and for all your hard work on the Which? account!<br/><br/>
                         You will be greatly missed – I have such great memories of our days at the Aztec office and
                             our pub/cards against humanity nights 😊 – fun times!
-
                     </CardText>
                 </CardBody>
                 <CardFooter>Natasha Ogden :: Commercial & People Director</CardFooter>
             </Card>
         </Col>
-    </Row>
-    <Row>
-        <Col>&nbsp;</Col>
-    </Row>
-    <Row>
-        <Col>&nbsp;</Col>
-    </Row>
-    <Row>
-        <Col>&nbsp;</Col>
-    </Row>
-    <Row>
-        <Col>&nbsp;</Col>
-    </Row>
-    <Row>
-        <Col>&nbsp;</Col>
-    </Row>
-    <Row>
-        <Col>&nbsp;</Col>
     </Row>
 </Container>
 

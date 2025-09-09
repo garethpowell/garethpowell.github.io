@@ -1,0 +1,147 @@
+[
+  {
+    "text": "Java",
+    "weight": 50,
+    "url": "https://www.java.com/",
+    "color": "#007396",
+    "rotate": false
+  },
+  {
+    "text": "Kotlin",
+    "weight": 40,
+    "url": "https://kotlinlang.org/",
+    "color": "#7F52FF"
+  },
+  {
+    "text": "Agile",
+    "weight": 25,
+    "url": "https://www.agilealliance.org/",
+    "color": "#16a34a"
+  },
+  {
+    "text": "Scrum",
+    "weight": 25,
+    "url": "https://www.scrum.org/",
+    "color": "#009FDA"
+  },
+  {
+    "text": "Terraform",
+    "weight": 25,
+    "url": "https://developer.hashicorp.com/terraform",
+    "color": "#7B42BC"
+  },
+  {
+    "text": "Spring",
+    "weight": 45,
+    "url": "https://spring.io/",
+    "color": "#6DB33F"
+  },
+  {
+    "text": "Docker",
+    "weight": 30,
+    "url": "https://www.docker.com/",
+    "color": "#2496ED"
+  },
+  {
+    "text": "Amazon Web Services",
+    "weight": 30,
+    "url": "https://aws.amazon.com/",
+    "color": "#FF9900"
+  },
+  {
+    "text": "Jetbrains",
+    "weight": 40,
+    "url": "https://www.jetbrains.com/",
+    "color": "#FE2857"
+  },
+  {
+    "text": "Gradle",
+    "weight": 30,
+    "url": "https://gradle.org/",
+    "color": "#02303A"
+  },
+  {
+    "text": "Hibernate",
+    "weight": 35,
+    "url": "https://hibernate.org/",
+    "color": "#59666C"
+  },
+  {
+    "text": "Spring Boot",
+    "weight": 45,
+    "url": "https://spring.io/projects/spring-boot",
+    "color": "#6DB33F"
+  },
+  {
+    "text": "Spring Batch",
+    "weight": 35,
+    "url": "https://spring.io/projects/spring-batch",
+    "color": "#6DB33F"
+  },
+  {
+    "text": "Teamcity",
+    "weight": 30,
+    "url": "https://www.jetbrains.com/teamcity/",
+    "color": "#0F9ED5"
+  },
+  {
+    "text": "SQL Server",
+    "weight": 30,
+    "url": "https://www.microsoft.com/sql-server",
+    "color": "#CC2927"
+  },
+  {
+    "text": "MySQL",
+    "weight": 25,
+    "url": "https://www.mysql.com/",
+    "color": "#4479A1"
+  },
+  {
+    "text": "Oracle",
+    "weight": 20,
+    "url": "https://www.oracle.com/database/",
+    "color": "#F80000"
+  },
+  {
+    "text": "Lambda",
+    "weight": 25,
+    "url": "https://aws.amazon.com/lambda/",
+    "color": "#FF9900"
+  },
+  {
+    "text": "Elastic Beanstalk",
+    "weight": 30,
+    "url": "https://aws.amazon.com/elasticbeanstalk/",
+    "color": "#FF9900"
+  },
+  {
+    "text": "Maven",
+    "weight": 20,
+    "url": "https://maven.apache.org/",
+    "color": "#C71A36"
+  },
+  {
+    "text": "IntelliJ",
+    "weight": 50,
+    "url": "https://www.jetbrains.com/idea/",
+    "color": "#000000"
+  },
+  {
+    "text": "Ansible",
+    "weight": 20,
+    "url": "https://www.ansible.com/",
+    "color": "#000000"
+  },
+  {
+    "text": "Spring AI",
+    "weight": 20,
+    "url": "https://spring.io/projects/spring-ai",
+    "color": "#6DB33F"
+  },
+  {
+    "text": "SQL",
+    "weight": 25,
+    "url": "https://spring.io/projects/spring-ai",
+    "color": "#000000"
+  }
+]
