@@ -7,6 +7,7 @@
     import { resolve } from "$app/paths";
 </script>
 
+<h1 class="display-6 fw-bold lh-sm mb-2">Experience</h1>
 <section class="glass p-4 p-md-5 rounded-4">
     <!-- Mosaic Island -->
     <div class="row align-items-center g-4 g-lg-5 mb-4 mb-lg-5">

@@ -34,7 +34,7 @@
 		"svelte-fa": "^4.0.4",
 		"tailwindcss": "^4.1.12",
 		"typescript": "^5.9.2",
-		"vite": "^7.1.4"
+		"vite": "^7.1.5"
 	},
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^7.0.0",

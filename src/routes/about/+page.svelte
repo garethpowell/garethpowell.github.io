@@ -8,6 +8,7 @@
     let CVFile = "Gareth_Powell_CV_2025.pdf";
 </script>
 
+<h1 class="display-6 fw-bold lh-sm mb-3">About Clean Code Solutions</h1>
 <section class="glass p-4 p-md-5 rounded-4">
     <div class="row align-items-center g-4 g-lg-5">
         <div class="col-12 col-sm-5 col-lg-4 text-center">
@@ -23,7 +24,6 @@
             />
         </div>
         <div class="col-12 col-sm-7 col-lg-8">
-            <h1 class="display-6 fw-bold lh-sm mb-3">About Clean Code Solutions</h1>
             <p class="lead mb-3">
                 Gareth (Gaz) Powell — Principal Software Engineer specialising in JVM ecosystems and secure,
                 regulated environments. I lead design and delivery end‑to‑end: data, APIs, batch, UI, and
