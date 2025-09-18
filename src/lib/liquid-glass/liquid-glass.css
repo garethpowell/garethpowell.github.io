@@ -1,0 +1,258 @@
+/*! Liquid Glass for Bootstrap 5.3+  |  v1.0
+    Inspired by Apple's translucent/vibrancy surfaces. Include after Bootstrap.
+    Works with light/dark mode via prefers-color-scheme or data-bs-theme.
+*/
+
+/* ----------------------------------------------------
+   Base + Tokens
+---------------------------------------------------- */
+:root,
+[data-bs-theme="light"] {
+    --bs-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+    --bs-primary: #0a84ff;
+    --bs-primary-rgb: 10, 132, 255;
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 85%, black);
+    --bs-focus-ring-color: rgba(var(--bs-primary-rgb), .35);
+    --bs-focus-ring-width: .25rem;
+
+    --bs-border-radius: 1rem;
+    --bs-border-radius-sm: .75rem;
+    --bs-border-radius-lg: 1.25rem;
+
+    --lg-tint: 255,255,255;
+    --lg-opacity: .60;
+    --lg-blur: 24px;
+    --lg-radius: 16px;
+    --lg-hairline: rgba(60,60,67,.12);
+    --lg-glass-stroke: rgba(255,255,255,.50);
+    --lg-shadow: 0 10px 30px rgba(0,0,0,.08);
+    --lg-glow: inset 0 1px 0 rgba(255,255,255,.35);
+
+    --lg-bg-color: #f5f5f7;
+    --lg-bg-image:
+            radial-gradient(1200px 1200px at 10% -10%, rgba(10,132,255,.15), transparent 45%),
+            radial-gradient(1000px 1000px at 100% 0%, rgba(255,45,85,.12), transparent 45%),
+            radial-gradient(1000px 1000px at 0% 100%, rgba(52,199,89,.10), transparent 45%);
+
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root,
+    [data-bs-theme="dark"] {
+        color-scheme: dark;
+        --bs-body-color: #f5f5f7;
+        --bs-body-bg: transparent;
+
+        --bs-primary: #64d2ff;
+        --bs-primary-rgb: 100,210,255;
+        --bs-link-color: var(--bs-primary);
+        --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 85%, white);
+        --bs-border-color: rgba(255,255,255,.12);
+        --bs-tooltip-bg: rgba(250,250,252,.92);
+        --bs-tooltip-color: #111;
+
+        --lg-tint: 20,20,24;
+        --lg-opacity: .55;
+        --lg-glass-stroke: rgba(255,255,255,.12);
+        --lg-hairline: rgba(255,255,255,.11);
+        --lg-shadow: 0 10px 30px rgba(0,0,0,.55);
+        --lg-glow: inset 0 1px 0 rgba(255,255,255,.06);
+
+        --lg-bg-color: #0b0b0f;
+        --lg-bg-image:
+                radial-gradient(1200px 1200px at 0% -10%, rgba(10,132,255,.25), transparent 50%),
+                radial-gradient(1000px 1000px at 100% 0%, rgba(255,55,95,.20), transparent 50%),
+                radial-gradient(1000px 1000px at 0% 100%, rgba(48,209,88,.18), transparent 55%);
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.lg-bg {
+    background-color: var(--lg-bg-color);
+    background-image: var(--lg-bg-image);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------------------------------
+   Glass Surface Utilities
+---------------------------------------------------- */
+
+.glass {
+    background: rgba(var(--lg-tint), var(--lg-opacity));
+    border: 1px solid var(--lg-glass-stroke);
+    box-shadow: var(--lg-shadow), var(--lg-glow);
+    border-radius: var(--lg-radius);
+    -webkit-backdrop-filter: saturate(180%) blur(var(--lg-blur));
+    backdrop-filter: saturate(180%) blur(var(--lg-blur));
+}
+.glass-sm { --lg-opacity: .50; --lg-blur: 16px; }
+.glass-lg { --lg-opacity: .70; --lg-blur: 32px; }
+
+.btn-glass {
+    --_lg-btn-bg: rgba(var(--lg-tint), .28);
+    --_lg-btn-bg-hover: rgba(var(--lg-tint), .36);
+    --_lg-btn-bg-active: rgba(var(--lg-tint), .42);
+    --_lg-btn-border: var(--lg-glass-stroke);
+    background: var(--_lg-btn-bg);
+    color: var(--bs-body-color);
+    border: 1px solid var(--_lg-btn-border);
+    border-radius: calc(var(--lg-radius) - 8px);
+    box-shadow: var(--lg-shadow), var(--lg-glow);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    backdrop-filter: saturate(180%) blur(14px);
+}
+.btn-glass:hover      { background: var(--_lg-btn-bg-hover); }
+.btn-glass:active,
+.btn-glass.active     { background: var(--_lg-btn-bg-active); }
+.btn-glass:focus-visible {
+    outline: var(--bs-focus-ring-width) solid var(--bs-focus-ring-color);
+    outline-offset: 2px;
+}
+
+.lg-hairline { border-top: 1px solid var(--lg-hairline); }
+
+/* ----------------------------------------------------
+   Opt-in Theme Wrapper
+---------------------------------------------------- */
+.lg-glass {
+    --bs-card-bg: rgba(var(--lg-tint), calc(var(--lg-opacity) + .05));
+    --bs-card-border-color: var(--lg-glass-stroke);
+    --bs-dropdown-bg: rgba(var(--lg-tint), var(--lg-opacity));
+    --bs-dropdown-border-color: var(--lg-glass-stroke);
+    --bs-modal-bg: rgba(var(--lg-tint), calc(var(--lg-opacity) + .02));
+    --bs-offcanvas-bg: rgba(var(--lg-tint), calc(var(--lg-opacity) + .02));
+    --bs-popover-bg: rgba(var(--lg-tint), calc(var(--lg-opacity) + .02));
+    --bs-table-bg: transparent;
+    --bs-list-group-bg: rgba(var(--lg-tint), calc(var(--lg-opacity) + .03));
+    --bs-list-group-border-color: var(--lg-glass-stroke);
+    --bs-input-bg: rgba(var(--lg-tint), calc(var(--lg-opacity) + .20));
+    --bs-input-border-color: color-mix(in srgb, var(--bs-body-color) 8%, transparent);
+    --bs-navbar-color: color-mix(in srgb, var(--bs-body-color) 80%, transparent);
+    --bs-navbar-hover-color: var(--bs-body-color);
+    --bs-navbar-brand-color: var(--bs-body-color);
+    --bs-navbar-toggler-border-color: var(--lg-hairline);
+    --bs-dropdown-link-active-bg: rgba(var(--bs-primary-rgb), .20);
+}
+
+.lg-glass .navbar,
+.lg-glass .card,
+.lg-glass .dropdown-menu,
+.lg-glass .modal-content,
+.lg-glass .offcanvas,
+.lg-glass .toast,
+.lg-glass .popover,
+.lg-glass .list-group,
+.lg-glass .accordion-item {
+    border: 1px solid var(--lg-glass-stroke);
+    box-shadow: var(--lg-shadow), var(--lg-glow);
+    border-radius: var(--lg-radius);
+    -webkit-backdrop-filter: saturate(180%) blur(var(--lg-blur));
+    backdrop-filter: saturate(180%) blur(var(--lg-blur));
+}
+
+.lg-glass .navbar {
+    background: rgba(var(--lg-tint), var(--lg-opacity)) !important;
+    border-bottom: 1px solid var(--lg-glass-stroke);
+}
+
+.lg-glass .dropdown-menu,
+.lg-glass .popover {
+    background: var(--bs-dropdown-bg);
+    border-radius: calc(var(--lg-radius) - 6px);
+}
+
+.lg-glass .modal-content,
+.lg-glass .offcanvas {
+    background: var(--bs-modal-bg);
+}
+
+.lg-glass .card { background: var(--bs-card-bg); }
+.lg-glass .card-header,
+.lg-glass .card-footer {
+    background: rgba(var(--lg-tint), calc(var(--lg-opacity) + .06));
+    border-color: var(--lg-glass-stroke);
+}
+
+.lg-glass .list-group,
+.lg-glass .list-group-item {
+    background: var(--bs-list-group-bg);
+    border-color: var(--bs-list-group-border-color);
+}
+
+.lg-glass .form-control,
+.lg-glass .form-select,
+.lg-glass .input-group-text {
+    background: var(--bs-input-bg);
+    border: 1px solid var(--bs-input-border-color);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+.lg-glass .form-control::placeholder { opacity: .7; }
+.lg-glass .form-control:focus,
+.lg-glass .form-select:focus {
+    border-color: rgba(var(--bs-primary-rgb), .5);
+    box-shadow: 0 0 0 var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+}
+
+.lg-glass .tooltip .tooltip-inner { border-radius: .5rem; }
+.lg-glass .btn { border-radius: calc(var(--lg-radius) - 8px); }
+.lg-glass .table > :not(caption) > * > * { background-color: transparent !important; }
+
+/* ----------------------------------------------------
+   Accessibility & Motion
+---------------------------------------------------- */
+:focus-visible {
+    outline: var(--bs-focus-ring-width) solid var(--bs-focus-ring-color);
+    outline-offset: 2px;
+}
+
+@media (prefers-contrast: more) {
+    .glass,
+    .lg-glass .navbar,
+    .lg-glass .card,
+    .lg-glass .dropdown-menu,
+    .lg-glass .modal-content,
+    .lg-glass .offcanvas,
+    .lg-glass .list-group,
+    .lg-glass .popover,
+    .lg-glass .toast {
+        --lg-opacity: .72;
+        border-color: color-mix(in srgb, var(--bs-body-color) 20%, transparent);
+        box-shadow: 0 0 0 1px color-mix(in srgb, var(--bs-body-color) 12%, transparent),
+        var(--lg-shadow);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+}
+
+/* ----------------------------------------------------
+   Fallbacks (no backdrop-filter support)
+---------------------------------------------------- */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+    .glass,
+    .lg-glass .navbar,
+    .lg-glass .card,
+    .lg-glass .dropdown-menu,
+    .lg-glass .modal-content,
+    .lg-glass .offcanvas,
+    .lg-glass .popover,
+    .lg-glass .toast,
+    .lg-glass .list-group,
+    .lg-glass .accordion-item,
+    .btn-glass {
+        background: rgba(var(--lg-tint), .95) !important;
+        box-shadow: var(--lg-shadow);
+    }
+}
