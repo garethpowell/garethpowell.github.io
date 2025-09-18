@@ -9,6 +9,29 @@
     onMount(async () => {
         initTheme(); // set data-bs-theme from store (auto by default)
         await import('bootstrap/dist/js/bootstrap.bundle.min.js'); // collapse, dropdowns, etc.
+
+        // Light ripple hover effect for buttons
+        const update = (e: PointerEvent) => {
+            const target = (e.target as HTMLElement | null)?.closest?.('.btn, .btn-glass') as HTMLElement | null;
+            if (!target) return;
+            const rect = target.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            target.style.setProperty('--lg-ripple-x', x + 'px');
+            target.style.setProperty('--lg-ripple-y', y + 'px');
+            target.style.setProperty('--lg-ripple-opacity', '1');
+        };
+        const leave = (e: PointerEvent) => {
+            const el = (e.target as HTMLElement | null)?.closest?.('.btn, .btn-glass') as HTMLElement | null;
+            if (el) el.style.setProperty('--lg-ripple-opacity', '0');
+        };
+        document.addEventListener('pointermove', update, { passive: true });
+        document.addEventListener('pointerleave', leave, true);
+
+        return () => {
+            document.removeEventListener('pointermove', update as any);
+            document.removeEventListener('pointerleave', leave as any, true as any);
+        };
     });
 
     const links = [

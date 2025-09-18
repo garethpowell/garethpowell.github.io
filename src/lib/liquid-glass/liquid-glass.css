@@ -103,6 +103,17 @@ body {
     --_lg-btn-bg-hover: rgba(var(--lg-tint), .36);
     --_lg-btn-bg-active: rgba(var(--lg-tint), .42);
     --_lg-btn-border: var(--lg-glass-stroke);
+    /* Ripple variables */
+    --lg-ripple-x: 50%;
+    --lg-ripple-y: 50%;
+    --lg-ripple-opacity: 0;
+    --lg-ripple-size: 180px;
+    --lg-ripple-light: rgba(255,255,255,.32);
+    --lg-ripple-light-dark: rgba(255,255,255,.18);
+
+    position: relative;
+    overflow: hidden;
+
     background: var(--_lg-btn-bg);
     color: var(--bs-body-color);
     border: 1px solid var(--_lg-btn-border);
@@ -117,6 +128,79 @@ body {
 .btn-glass:focus-visible {
     outline: var(--bs-focus-ring-width) solid var(--bs-focus-ring-color);
     outline-offset: 2px;
+}
+
+/* Light ripple that follows the cursor */
+.btn-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle var(--lg-ripple-size) at var(--lg-ripple-x) var(--lg-ripple-y),
+        var(--lg-ripple-light),
+        transparent 60%
+    );
+    opacity: var(--lg-ripple-opacity);
+    transition: opacity .25s ease;
+}
+
+[data-bs-theme="dark"] .btn-glass::before {
+    background: radial-gradient(
+        circle var(--lg-ripple-size) at var(--lg-ripple-x) var(--lg-ripple-y),
+        var(--lg-ripple-light-dark),
+        transparent 60%
+    );
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-bs-theme="light"]) .btn-glass::before {
+        background: radial-gradient(
+            circle var(--lg-ripple-size) at var(--lg-ripple-x) var(--lg-ripple-y),
+            var(--lg-ripple-light-dark),
+            transparent 60%
+        );
+    }
+}
+
+/* Generic ripple for standard Bootstrap buttons too (non-link btns) */
+.btn:not(.btn-link):not(.btn-glass) {
+    --lg-ripple-x: 50%;
+    --lg-ripple-y: 50%;
+    --lg-ripple-opacity: 0;
+    --lg-ripple-size: 180px;
+    --lg-ripple-light: rgba(255,255,255,.25);
+    --lg-ripple-light-dark: rgba(255,255,255,.14);
+    position: relative;
+    overflow: hidden;
+}
+.btn:not(.btn-link):not(.btn-glass)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle var(--lg-ripple-size) at var(--lg-ripple-x) var(--lg-ripple-y),
+        var(--lg-ripple-light),
+        transparent 60%
+    );
+    opacity: var(--lg-ripple-opacity);
+    transition: opacity .25s ease;
+}
+[data-bs-theme="dark"] .btn:not(.btn-link):not(.btn-glass)::before {
+    background: radial-gradient(
+        circle var(--lg-ripple-size) at var(--lg-ripple-x) var(--lg-ripple-y),
+        var(--lg-ripple-light-dark),
+        transparent 60%
+    );
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-bs-theme="light"]) .btn:not(.btn-link):not(.btn-glass)::before {
+        background: radial-gradient(
+            circle var(--lg-ripple-size) at var(--lg-ripple-x) var(--lg-ripple-y),
+            var(--lg-ripple-light-dark),
+            transparent 60%
+        );
+    }
 }
 
 .lg-hairline { border-top: 1px solid var(--lg-hairline); }
