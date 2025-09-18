@@ -2,13 +2,26 @@
     let opacity = 0.60;
     let blur = 24;
     let radius = 16;
+
+    import Hero from "./content/Hero.svelte";
+    import Services from "./content/Services.svelte";
+    import Quotes from "./content/Quotes.svelte";
+    import WordCloud from "./content/WordCloud.svelte";
 </script>
 
-<div class="row g-4">
+<Hero />
+
+<Services />
+
+<Quotes />
+
+<WordCloud />
+
+<!--<div class="row g-4">
     <div class="col-12 col-lg-6">
         <div
                 class="card"
-                style={`--lg-opacity:${opacity}; --lg-blur:${blur}px; --lg-radius:${radius}px`}
+                style={`&#45;&#45;lg-opacity:${opacity}; &#45;&#45;lg-blur:${blur}px; &#45;&#45;lg-radius:${radius}px`}
         >
             <div class="card-body">
                 <h2 class="h5">Liquid Glass Card</h2>
@@ -40,6 +53,7 @@
         </div>
     </div>
 
+&lt;!&ndash;
     <div class="col-12 col-lg-6">
         <div class="card">
             <div class="card-body">
@@ -63,4 +77,5 @@
             </div>
         </div>
     </div>
-</div>
+&ndash;&gt;
+</div>-->
