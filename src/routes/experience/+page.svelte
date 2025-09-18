@@ -4,27 +4,35 @@
 </svelte:head>
 
 <script lang="ts">
-
+    import { resolve } from "$app/paths";
 </script>
 
-<div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-4">
+<section class="glass p-4 p-md-5 rounded-4">
+    <!-- Mosaic Island -->
+    <div class="row align-items-center g-4 g-lg-5 mb-4 mb-lg-5">
+        <div class="col-12 col-sm-5 col-lg-4 text-center">
             <a href="https://www.mosaicisland.co.uk" target="_blank" aria-label="Mosaic Island">
-                <img src="MI_GraphicAsset_v1_Purple.svg" class="d-block mx-lg-auto img-fluid"
-                                                   alt="Mosaic Island" width="300" loading="lazy">
+                <img
+                    src={resolve('/MI_GraphicAsset_v1_Purple.svg')}
+                    class="img-fluid d-block mx-auto"
+                    alt="Mosaic Island logo"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 576px) 60vw, 300px"
+                />
             </a>
         </div>
-        <div class="col-lg-8">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Mosaic Island
-                <small class="text-body-secondary">2010 - 2025</small></h1>
-            <p class="lead">
-                Principal Software Engineer
-            </p>
-            <p class="lead">
+        <div class="col-12 col-sm-7 col-lg-8">
+            <h1 class="display-6 fw-bold lh-sm mb-2">Mosaic Island
+                <small class="text-body-secondary">2010 - 2025</small>
+            </h1>
+            <p class="lead mb-2">Principal Software Engineer</p>
+            <p class="lead mb-3">
                 End‑to‑end delivery across CRM, finance, integrations, and platform modernisation on AWS.
             </p>
-            <ul>
+            <ul class="mb-0">
                 <li>Built bespoke CRM on JVM (Spring/Hibernate/Tomcat) from MVP to scale</li>
                 <li>Verifone payments, comms authoring, rules engine, full‑stack SQL → JSP</li>
                 <li>Stabilised finance system with robust integration tests; 10+ years stable</li>
@@ -37,30 +45,37 @@
                 <li>Spring Batch scheduler/monitor + optimised pipelines; Playwright health checks</li>
                 <li>Prototyped MCP server using Spring AI integrated with CRM</li>
                 <li>Outcome: reliable platform, faster deployments, reduced complexity, stronger security</li>
-
             </ul>
         </div>
     </div>
 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-4">
+    <hr class="lg-hairline my-2 my-sm-3" />
+
+    <!-- Companies House -->
+    <div class="row align-items-center g-4 g-lg-5 my-4 my-lg-5">
+        <div class="col-12 col-sm-5 col-lg-4 text-center">
             <a href="https://www.gov.uk/government/organisations/companies-house" target="_blank" aria-label="Companies House">
-                <img src="ch_logo.jpg" class="d-block mx-lg-auto img-fluid"
-                     alt="Companies House" width="300" loading="lazy">
+                <img
+                    src={resolve('/ch_logo.jpg')}
+                    class="img-fluid d-block mx-auto"
+                    alt="Companies House logo"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 576px) 60vw, 300px"
+                />
             </a>
         </div>
-        <div class="col-lg-8">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Companies House
-                <small class="text-body-secondary">2006 - 2010</small></h1>
-            <p class="lead">
-                Senior Software Engineer
-            </p>
-            <p class="lead">
-                Core contributor to CHIPS (STEM replacement) on WebLogic/Java/Oracle.
-            </p>
-            <ul>
+        <div class="col-12 col-sm-7 col-lg-8">
+            <h1 class="display-6 fw-bold lh-sm mb-2">Companies House
+                <small class="text-body-secondary">2006 - 2010</small>
+            </h1>
+            <p class="lead mb-2">Senior Software Engineer</p>
+            <p class="lead mb-3">Core contributor to CHIPS (STEM replacement) on WebLogic/Java/Oracle.</p>
+            <ul class="mb-0">
                 <li>Delivered Insolvency & Liquidation processing; corrected legacy design issues</li>
-                <li> Delivered Companies Act 2006 changes with BAs/QA to ensure compliance</li>
+                <li>Delivered Companies Act 2006 changes with BAs/QA to ensure compliance</li>
                 <li>Mentored juniors; improved productivity and code quality</li>
                 <li>Supported recruitment via CV screening and interviews</li>
                 <li>Championed agile practices across the organisation</li>
@@ -68,17 +83,17 @@
         </div>
     </div>
 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-12">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">LocaVista/BlueFinger
-                <small class="text-body-secondary">1999 - 2006</small></h1>
-            <p class="lead">
-                Senior Software Engineer
-            </p>
-            <p class="lead">
-                Backend engineer for vehicle telematics/tracking in small cross‑functional teams.
-            </p>
-            <ul>
+    <hr class="lg-hairline my-2 my-sm-3" />
+
+    <!-- LocaVista / BlueFinger -->
+    <div class="row align-items-center g-4 g-lg-5 mt-4 mt-lg-5">
+        <div class="col-12">
+            <h1 class="display-6 fw-bold lh-sm mb-2">LocaVista/BlueFinger
+                <small class="text-body-secondary">1999 - 2006</small>
+            </h1>
+            <p class="lead mb-2">Senior Software Engineer</p>
+            <p class="lead mb-3">Backend engineer for vehicle telematics/tracking in small cross‑functional teams.</p>
+            <ul class="mb-0">
                 <li>Championed Java/J2EE; early Spring & Hibernate adoption</li>
                 <li>Built GPRS comms server integrating with Vodafone SMS network</li>
                 <li>Co‑developed XML‑RPC Java app and ColdFusion asset tracking web app</li>
@@ -87,5 +102,4 @@
             </ul>
         </div>
     </div>
-
-</div>
+</section>
