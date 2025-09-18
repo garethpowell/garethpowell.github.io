@@ -126,11 +126,40 @@
         return arr;
     }
 
-    let resizeTO: any;
+    // Responsive height and lazy rendering
+    function computeHeight() {
+        if (typeof window === 'undefined') return height;
+        const vw = Math.min(window.innerWidth, 600);
+        return Math.max(280, Math.min(520, Math.round(vw * 0.8)));
+    }
+    let effectiveHeight = height;
+    let hasRendered = false;
 
+    function setupObserver() {
+        if (!containerEl || typeof IntersectionObserver === 'undefined') return renderNow();
+        const io = new IntersectionObserver((entries) => {
+            if (entries.some((e) => e.isIntersecting)) {
+                io.disconnect();
+                renderNow();
+            }
+        }, { rootMargin: '200px' });
+        io.observe(containerEl);
+    }
+
+    async function renderNow() {
+        if (hasRendered) return;
+        hasRendered = true;
+        await ensureWordCloudLoaded();
+        await loadData();
+    }
+
+    let resizeTO: any;
     function handleResize() {
         clearTimeout(resizeTO);
-        resizeTO = setTimeout(renderCloud, 200);
+        resizeTO = setTimeout(() => {
+            effectiveHeight = computeHeight();
+            renderCloud();
+        }, 200);
     }
 
     function onShuffle() {
@@ -155,9 +184,9 @@
         renderCloud();
     }
 
-    onMount(async () => {
-        await ensureWordCloudLoaded();
-        await loadData();
+    onMount(() => {
+        effectiveHeight = computeHeight();
+        setupObserver();
         if (typeof window !== 'undefined') {
             window.addEventListener('resize', handleResize);
         }
@@ -178,8 +207,8 @@
     <div class="row align-items-center g-5 py-5">
         <div class="col">
 
-            <div class="wc-container mb-5 ms-5 py-5" bind:this={containerEl}>
-                <div id="wordcloud" class="wc-canvas" style={`height:${height}px`} role="img" aria-label="Interactive word cloud; click a term to navigate" bind:this={canvasHostEl}></div>
+            <div class="wc-container mb-5 ms-md-5 py-5" bind:this={containerEl}>
+                <div id="wordcloud" class="wc-canvas" style={`height:${effectiveHeight}px`} role="img" aria-label="Interactive word cloud; click a term to navigate" bind:this={canvasHostEl}></div>
                 <div class="legend">Tip: Click a word to open its link in a new tab.</div>
             </div>
 

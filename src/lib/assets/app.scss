@@ -12,10 +12,22 @@
 html {
     scroll-behavior: smooth
 }
+:root {
+    --footer-h: 80px;
+}
+
 body {
     margin: 0;
     font-family: JetBrains Mono, ui-monospace, ui-sans-serif;
     color: var(--fg);
     background: var(--bg);
-    line-height: 1.6
+    line-height: 1.6;
+    padding-bottom: calc(var(--footer-h) + env(safe-area-inset-bottom));
 }
+
+/* Prevent horizontal scroll and scale media on mobile */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, svg, canvas, video { max-width: 100%; height: auto; }
+
+/* Reserve space for fixed footer height */
+footer.fixed-bottom { height: var(--footer-h); }

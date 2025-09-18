@@ -62,7 +62,7 @@
                 </CardHeader>
                 <CardBody >
                     <CardText >
-                        <img src="Group-347.webp" alt="Matt Lock" height="100" class="rounded float-start px-4"/>
+                        <img src="Group-347.webp" alt="Matt Lock" style="max-height: 100px" class="rounded float-start px-4" loading="lazy"/>
                             It's been a long journey in which you have played a fabulous role. So many nights out in
                             London to remember.
                     </CardText>
@@ -89,7 +89,7 @@
                 </CardHeader>
                 <CardBody>
                     <CardText>
-                        <img src="Group-349.webp" alt="Natasha Ogden" height="100" class="rounded float-start px-4"/>Gaz you have been such a huge part of Mosaic Island – thank you for your ongoing dedication
+                        <img src="Group-349.webp" alt="Natasha Ogden" style="max-height: 100px" class="rounded float-start px-4" loading="lazy"/>Gaz you have been such a huge part of Mosaic Island – thank you for your ongoing dedication
                             to us and for all your hard work on the Which? account!<br/><br/>
                         You will be greatly missed – I have such great memories of our days at the Aztec office and
                             our pub/cards against humanity nights 😊 – fun times!

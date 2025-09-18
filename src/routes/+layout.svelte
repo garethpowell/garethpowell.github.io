@@ -7,6 +7,8 @@
 </script>
 
 <svelte:head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="icon" type="image/png" href={resolve('/favicon-96x96.png')} sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href={resolve('/favicon.svg')} />
     <link rel="shortcut icon" href={resolve('/favicon.ico')} />

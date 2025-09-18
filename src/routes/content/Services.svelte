@@ -3,7 +3,7 @@
 </script>
 
 <div class="container col-xl-12 col-xxl-8 px-4 py-5">
-    <div class="row g-lg-5 py-5">
+    <div class="row g-lg-5 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col">
             <div class="card border-info mb-3">
                 <div class="card-header">Cloud & Platform</div>
@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="row g-lg-5 py-5">
+    <div class="row g-lg-5 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col">
             <div class="card border-info mb-3">
                 <div class="card-header">DEVOPS & CI/CD</div>
@@ -115,7 +115,7 @@
                 <div class="card-header">Pragmatic, security‑minded engineering leadership and delivery</div>
                 <div class="card-body">
                     <div class="container">
-                        <div class="row">
+                        <div class="row row-cols-1 row-cols-md-3">
                             <div class="col">
                                 <div class="card text-bg-primary mb-3">
                                     <div class="card-body">
