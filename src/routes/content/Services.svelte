@@ -101,7 +101,7 @@
                 <div class="card-body">
                     <div class="row row-cols-1 row-cols-md-3 g-3 g-md-4">
                         <div class="col">
-                            <div class="card text-bg-primary h-100">
+                            <div class="card h-100">
                                 <div class="card-body">
                                     <h3 class="h6 card-title mb-2">Core Stack</h3>
                                     <p class="card-text mb-0">Kotlin/Java, Spring Boot, Integration & Batch, Hibernate</p>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card text-bg-info h-100">
+                            <div class="card h-100">
                                 <div class="card-body">
                                     <h3 class="h6 card-title mb-2">Cloud & Platform</h3>
                                     <p class="card-text mb-0">AWS (VPC/EC2, Lambda, Elastic Beanstalk), Docker, Terraform, Ansible, CDK</p>
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card text-bg-success h-100">
+                            <div class="card h-100">
                                 <div class="card-body">
                                     <h3 class="h6 card-title mb-2">Build & CI</h3>
                                     <p class="card-text mb-0">Gradle (Kotlin DSL), GitHub Actions, TeamCity, Sonar/Qodana, Flyway, Testcontainers</p>
