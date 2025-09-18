@@ -11,7 +11,8 @@
 
 <Navbar color="light" light expand="md" container="md">
     <NavbarBrand href={resolve('/')}>
-        <img src={resolve('/ccs-logo.webp')} alt="Clean Code Solutions Logo" height="48"> Clean Code Solutions
+        <img src={resolve('/ccs-banner@0.5x.webp')} height="64"  alt="Clean Code Solutions Banner"/>
+<!--        <img src={resolve('/ccs-logo.webp')} alt="Clean Code Solutions Logo" height="48"> Clean Code Solutions-->
     </NavbarBrand>
     <Nav class="ms-auto" navbar>
         <NavItem>
