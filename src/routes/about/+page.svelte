@@ -4,37 +4,50 @@
 </svelte:head>
 
 <script lang="ts">
+    import { resolve } from "$app/paths";
     let CVFile = "Gareth_Powell_CV_2025.pdf";
-    import {resolve} from "$app/paths";
 </script>
 
-<div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-4">
-            <img src="gareth_powell.png" class="d-block mx-lg-auto img-fluid rounded mx-auto d-block"
-                     alt="Gareth Powell" width="300" loading="lazy">
+<h1 class="display-6 fw-bold lh-sm mb-3">About Clean Code Solutions</h1>
+<section class="glass p-4 p-md-5 rounded-4">
+    <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-12 col-sm-5 col-lg-4 text-center">
+            <img
+                src={resolve('/gareth_powell.png')}
+                class="img-fluid rounded mx-auto d-block"
+                alt="Portrait of Gareth Powell"
+                width="300"
+                height="300"
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 576px) 60vw, 300px"
+            />
         </div>
-        <div class="col-lg-8">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Clean Code Solutions</h1>
-            <p class="lead">
+        <div class="col-12 col-sm-7 col-lg-8">
+            <p class="lead mb-3">
                 Gareth (Gaz) Powell — Principal Software Engineer specialising in JVM ecosystems and secure,
                 regulated environments. I lead design and delivery end‑to‑end: data, APIs, batch, UI, and
                 infrastructure, with a pragmatic and security‑first approach.
-
+            </p>
+            <p class="lead mb-4">
                 I champion clean code, static analysis, automation, and measurable outcomes. I’ve modernised
                 legacy estates, driven cloud migrations, and instituted robust CI/CD with quality gates.
             </p>
-            <br/>
-            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Education</h2>
-            <p class="lead">
-                Lancaster University
-            </p>
-            <p class="lead">
-                — BSc Computer Science with Software Engineering (1999)
-            </p>
-            <p>
-                <a href={resolve('/cv/' + CVFile)} class="btn btn-info" download aria-label="Download CV for Gareth Powell">Download my CV</a>
-            </p>
+
+            <h2 class="h4 fw-semibold mt-2 mb-2">Education</h2>
+            <p class="mb-1">Lancaster University</p>
+            <p class="text-body-secondary mb-4">BSc Computer Science with Software Engineering (1999)</p>
+
+            <div class="d-grid d-sm-inline-flex gap-2">
+                <a
+                    href={resolve('/cv/' + CVFile)}
+                    class="btn btn-glass"
+                    download
+                    aria-label="Download CV for Gareth Powell"
+                >
+                    Download my CV
+                </a>
+            </div>
         </div>
     </div>
-</div>
+</section>

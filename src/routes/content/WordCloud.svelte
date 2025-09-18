@@ -202,29 +202,20 @@
     });
 </script>
 
-
-<div class="container col-12 px-4 py-5">
-    <div class="row align-items-center g-5 py-5">
-        <div class="col">
-
-            <div class="wc-container mb-5 ms-md-5 py-5" bind:this={containerEl}>
+<h2 class="py-4">Technologies & Tools</h2>
+<section class="glass p-4 p-md-5 rounded-4">
+    <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-12">
+            <div class="wc-container mb-3" bind:this={containerEl}>
                 <div id="wordcloud" class="wc-canvas" style={`height:${effectiveHeight}px`} role="img" aria-label="Interactive word cloud; click a term to navigate" bind:this={canvasHostEl}></div>
                 <div class="legend">Tip: Click a word to open its link in a new tab.</div>
             </div>
-
         </div>
     </div>
-</div>
-
-
+</section>
 
 <style>
-    .wc-container { max-width: 1000px; margin: 0 auto; padding: 16px 20px; }
+    .wc-container { max-width: 1000px; margin: 0 auto; padding: 8px 12px; }
     .wc-canvas { width: 100%; background: var(--cloud-bg, #f8fafc); border: 1px solid var(--cloud-border, #e2e8f0); border-radius: 16px; position: relative; overflow: hidden; }
-    /*.toolbar { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }*/
-    /*.btn { appearance: none; border: 1px solid var(--cloud-border, #e2e8f0); background: white; padding: 8px 12px; border-radius: 9999px; cursor: pointer; font-weight: 600; }*/
-    /*.btn:hover { border-color: var(--brand, #2563eb); color: var(--brand, #2563eb); }*/
-    /*.status { font-size: 12px; color: #475569; margin-left: auto; }*/
-    /*.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }*/
     .legend { font-size: 12px; color: var(--white-50); margin-top: 8px; }
 </style>
