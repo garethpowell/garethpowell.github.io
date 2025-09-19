@@ -1,10 +1,16 @@
 <script lang="ts">
+import SectionBackground from "$lib/components/SectionBackground.svelte";
 </script>
 
-<h2 class="py-4">Core Technologies & Skills</h2>
+<br/>
 
-<section class="glass p-4 p-md-5 rounded-4">
-    <div class="row g-4 g-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+<SectionBackground
+        variant="nodes"
+        classes="text-white py-5"
+>
+    <h2 class="py-4">Core Technologies & Skills</h2>
+
+    <div class="row g-4 g-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3 position-relative">
         <div class="col">
             <div class="card h-100">
                 <div class="card-header fw-semibold">Cloud & Platform</div>
@@ -103,7 +109,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h3 class="h6 card-title mb-2">Core Stack</h3>
+                                    <h3 class="h5 card-title mb-2">Core Stack</h3>
                                     <p class="card-text mb-0">Kotlin/Java, Spring Boot, Integration & Batch, Hibernate</p>
                                 </div>
                             </div>
@@ -111,7 +117,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h3 class="h6 card-title mb-2">Cloud & Platform</h3>
+                                    <h3 class="h5 card-title mb-2">Cloud & Platform</h3>
                                     <p class="card-text mb-0">AWS (VPC/EC2, Lambda, Elastic Beanstalk), Docker, Terraform, Ansible, CDK</p>
                                 </div>
                             </div>
@@ -119,7 +125,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h3 class="h6 card-title mb-2">Build & CI</h3>
+                                    <h3 class="h5 card-title mb-2">Build & CI</h3>
                                     <p class="card-text mb-0">Gradle (Kotlin DSL), GitHub Actions, TeamCity, Sonar/Qodana, Flyway, Testcontainers</p>
                                 </div>
                             </div>
@@ -129,4 +135,5 @@
             </div>
         </div>
     </div>
-</section>
+
+</SectionBackground>

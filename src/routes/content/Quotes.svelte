@@ -1,9 +1,15 @@
 <script lang="ts">
     import {resolve} from '$app/paths';
+    import SectionBackground from "$lib/components/SectionBackground.svelte";
 </script>
 
-<h2 class="py-4">Quotes</h2>
-<section class="glass p-4 p-md-5 rounded-4">
+<br/>
+
+<SectionBackground
+        variant="hex"
+        classes="text-white py-5"
+>
+    <h2 class="py-4">Quotes</h2>
     <div class="row g-4 g-lg-5">
         <div class="col-10">
             <div class="card h-100">
@@ -37,7 +43,9 @@
             </div>
         </div>
     </div>
-    <hr class="lg-hairline"/>
+
+    <br/>
+
     <div class="row g-4 g-lg-5">
         <div class="col-1 col-lg-4"></div>
         <div class="col-11 col-lg-8">
@@ -56,7 +64,9 @@
             </div>
         </div>
     </div>
-    <hr class="lg-hairline"/>
+
+    <br/>
+
     <div class="row g-4 g-lg-5">
         <div class="col-12 col-lg-12">
             <div class="card h-100">
@@ -76,4 +86,5 @@
             </div>
         </div>
     </div>
-</section>
+
+</SectionBackground>

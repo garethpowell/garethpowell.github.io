@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount, onDestroy } from 'svelte';
     import { resolve } from '$app/paths';
+    import SectionBackground from "$lib/components/SectionBackground.svelte";
     // Props for flexibility
     let { dataUrl = '/words.json', height = 520, options = {} } = $props<{
         dataUrl?: string;
@@ -204,8 +205,13 @@
     });
 </script>
 
-<h2 class="py-4">Technologies & Tools</h2>
-<section class="glass p-4 p-md-5 rounded-4">
+<br/>
+
+<SectionBackground
+        variant="nodes"
+        classes="text-white py-5"
+>
+    <h2 class="py-4">Technologies & Tools</h2>
     <div class="row align-items-center g-4 g-lg-5">
         <div class="col-12">
             <div class="wc-container mb-3" bind:this={containerEl}>
@@ -214,7 +220,7 @@
             </div>
         </div>
     </div>
-</section>
+</SectionBackground>
 
 <style>
     .wc-container { max-width: 1000px; margin: 0 auto; padding: 8px 12px; }

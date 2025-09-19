@@ -68,7 +68,7 @@
     </main>
 
     <footer class="container py-4">
-        <hr class="lg-hairline" />
+        <hr class="lg-glass" />
         <section>
             <div class="container text-center">
                 <div class="row align-items-start align-items-center">

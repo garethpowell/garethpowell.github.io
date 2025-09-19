@@ -1,8 +1,12 @@
 <script lang="ts">
     import { resolve } from '$app/paths';
+    import SectionBackground from "$lib/components/SectionBackground.svelte";
 </script>
 
-<section class="glass p-4 p-md-5 rounded-4">
+<SectionBackground
+        variant="hex"
+        classes="text-white py-5"
+>
     <div class="row align-items-center g-4 g-lg-5">
         <div class="col-12 col-lg-7 text-center text-lg-start">
             <h1 class="display-5 fw-bold lh-sm mb-3">Clean Code Solutions</h1>
@@ -25,4 +29,5 @@
             </div>
         </div>
     </div>
-</section>
+
+</SectionBackground>
