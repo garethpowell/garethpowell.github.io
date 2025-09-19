@@ -5,20 +5,25 @@
 
 <script lang="ts">
     import { resolve } from "$app/paths";
+    import SectionBackground from "$lib/components/SectionBackground.svelte";
 </script>
 
-<section class="glass p-4 p-md-5 rounded-4">
+<SectionBackground
+        variant="blobs"
+        classes="text-white py-5"
+        overlay="rgba(0, 0, 0, 0.45)"
+>
     <div class="row align-items-center g-4 g-lg-5">
         <div class="col-12 col-sm-5 col-lg-4 text-center">
             <img
-                src={resolve('/contact-us.jpg')}
-                class="img-fluid rounded mx-auto d-block"
-                alt="Contact Clean Code Solutions"
-                width="300"
-                height="300"
-                loading="lazy"
-                decoding="async"
-                sizes="(max-width: 576px) 60vw, 300px"
+                    src={resolve('/contact-us.jpg')}
+                    class="img-fluid rounded mx-auto d-block"
+                    alt="Contact Clean Code Solutions"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 576px) 60vw, 300px"
             />
         </div>
         <div class="col-12 col-sm-7 col-lg-8">
@@ -54,4 +59,4 @@
             </form>
         </div>
     </div>
-</section>
+</SectionBackground>

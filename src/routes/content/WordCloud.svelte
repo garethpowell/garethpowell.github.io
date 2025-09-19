@@ -208,7 +208,7 @@
 <br/>
 
 <SectionBackground
-        variant="nodes"
+        variant="blobs"
         classes="text-white py-5"
 >
     <h2 class="py-4">Technologies & Tools</h2>

@@ -15,7 +15,7 @@
     const variants: Record<Variant, { src: string; defaultOverlay: string | null }> = {
         hex:   { src: '/img/backgrounds/abstract-hex.svg',   defaultOverlay: 'rgba(0,0,0,.35)' },
         nodes: { src: '/img/backgrounds/abstract-nodes.svg', defaultOverlay: 'rgba(0,0,0,.30)' },
-        blobs: { src: '/img/backgrounds/abstract-blobs.svg', defaultOverlay: 'rgba(255,255,255,.55)' }
+        blobs: { src: '/img/backgrounds/abstract-blobs.svg', defaultOverlay: 'rgba(0,0,0,.30)' }
     };
 
     // Resolve background source + overlay
