@@ -340,3 +340,29 @@ body {
         box-shadow: var(--lg-shadow);
     }
 }
+
+.bg-abstract-overlay {
+    position: relative;
+    isolation: isolate; /* create a new stacking context so ::before stays behind children */
+    background: url('/abstract-bg.png') center/cover no-repeat;
+    /*inset: 10px 10px 10px 10px ;*/
+    padding: 50px;
+    /*border-radius: 24px;*/
+    /*z-index: 1*/
+}
+
+/* Place the darkening overlay behind content and don't block interactions */
+.bg-abstract-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85); /* darken */
+    /*z-index: 0;*/
+    pointer-events: none;
+}
+
+/* Ensure content sits above the overlay */
+.bg-abstract-overlay > * {
+    position: relative;
+    z-index: 10;
+}

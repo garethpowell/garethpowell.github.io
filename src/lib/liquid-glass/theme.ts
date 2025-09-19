@@ -4,9 +4,9 @@ export type ThemeMode = 'auto' | 'light' | 'dark';
 const KEY = 'lg-theme';
 
 function getInitial(): ThemeMode {
-    if (typeof localStorage === 'undefined') return 'auto';
+    if (typeof localStorage === 'undefined') return 'dark';
     const v = localStorage.getItem(KEY);
-    return v === 'light' || v === 'dark' ? v : 'auto';
+    return v === 'light' || v === 'dark' ? v : 'dark';
 }
 
 function apply(mode: ThemeMode) {
