@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
+    import { resolve } from '$app/paths';
 
     export type NavItem = { href: string; label: string; active?: boolean };
 
@@ -27,7 +28,7 @@
     }
     $: currentPath = normalize($page.url?.pathname);
     function isActive(href: string): boolean {
-        const target = normalize(href);
+        const target = normalize(resolve(href));
         if (target === '/') return currentPath === '/';
         return currentPath === target || currentPath.startsWith(target + '/');
     }
@@ -81,7 +82,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark glass rounded-3 my-3 mx-3" role="navigation">
     <div class="container">
-        <a class="navbar-brand" href={brandHref} on:click={handleNavClick}>{brand}</a>
+        <a class="navbar-brand" href={resolve(brandHref)} on:click={handleNavClick}>{brand}</a>
 
         <div class="d-flex align-items-center gap-2 ms-auto">
             <slot name="end" />
@@ -104,7 +105,7 @@
                     <li class="nav-item">
                         <a
                                 class={"nav-link " + (isActive(item.href) ? 'active' : '')}
-                                href={item.href}
+                                href={resolve(item.href)}
                                 aria-current={isActive(item.href) ? 'page' : undefined}
                                 on:click={handleNavClick}
                         >

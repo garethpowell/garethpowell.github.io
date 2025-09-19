@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount, onDestroy } from 'svelte';
+    import { resolve } from '$app/paths';
     // Props for flexibility
     let { dataUrl = '/words.json', height = 520, options = {} } = $props<{
         dataUrl?: string;
@@ -21,14 +22,14 @@
 
     // Ensure the wordcloud script is available (loaded from /static/wordcloud.js by SvelteKit at /wordcloud.js)
     function ensureWordCloudLoaded(): Promise<void> {
-        return new Promise((resolve, reject) => {
-            if (typeof window !== 'undefined' && (window as any).WordCloud) return resolve();
-            if (typeof document === 'undefined') return resolve();
+        return new Promise((res, rej) => {
+            if (typeof window !== 'undefined' && (window as any).WordCloud) return res();
+            if (typeof document === 'undefined') return res();
             const script = document.createElement('script');
-            script.src = '/wordcloud.js';
+            script.src = resolve('/wordcloud.js');
             script.async = true;
-            script.onload = () => resolve();
-            script.onerror = () => reject(new Error('Failed to load /wordcloud.js'));
+            script.onload = () => res();
+            script.onerror = () => rej(new Error('Failed to load wordcloud.js'));
             document.head.appendChild(script);
         });
     }
@@ -104,7 +105,8 @@
     async function loadData() {
         status = 'Loading…';
         try {
-            const res = await fetch(dataUrl, { cache: 'no-store' });
+            const url = /^https?:\/\//i.test(dataUrl) || dataUrl.startsWith('//') ? dataUrl : resolve(dataUrl);
+            const res = await fetch(url, { cache: 'no-store' });
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const json = await res.json();
             if (!Array.isArray(json)) throw new Error('Invalid JSON: expected an array');
