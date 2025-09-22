@@ -5,23 +5,30 @@
 
 <script lang="ts">
     import { resolve } from "$app/paths";
+    import SectionBackground from "$lib/components/SectionBackground.svelte";
+    import DownloadResume from "$lib/components/DownloadResume.svelte";
 </script>
 
-<h1 class="display-6 fw-bold lh-sm mb-2">Experience</h1>
-<section class="glass p-4 p-md-5 rounded-4">
+<SectionBackground
+        variant="blobs"
+        classes="text-white py-5"
+        overlay="rgba(0, 0, 0, 0.55)"
+>
+    <h1 class="display-6 fw-bold lh-sm mb-5">Experience</h1>
+
     <!-- Mosaic Island -->
-    <div class="row align-items-center g-4 g-lg-5 mb-4 mb-lg-5">
+    <div class="row g-4 g-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3 position-relative py-4">
         <div class="col-12 col-sm-5 col-lg-4 text-center">
             <a href="https://www.mosaicisland.co.uk" target="_blank" aria-label="Mosaic Island">
                 <img
-                    src={resolve('/MI_GraphicAsset_v1_Purple.svg')}
-                    class="img-fluid d-block mx-auto"
-                    alt="Mosaic Island logo"
-                    width="300"
-                    height="300"
-                    loading="lazy"
-                    decoding="async"
-                    sizes="(max-width: 576px) 60vw, 300px"
+                        src={resolve('/MI_GraphicAsset_v1_Purple.svg')}
+                        class="img-fluid d-block mx-auto"
+                        alt="Mosaic Island logo"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(max-width: 576px) 60vw, 300px"
                 />
             </a>
         </div>
@@ -47,24 +54,25 @@
                 <li>Prototyped MCP server using Spring AI integrated with CRM</li>
                 <li>Outcome: reliable platform, faster deployments, reduced complexity, stronger security</li>
             </ul>
+            <DownloadResume />
         </div>
     </div>
 
     <hr class="lg-hairline my-2 my-sm-3" />
 
     <!-- Companies House -->
-    <div class="row align-items-center g-4 g-lg-5 my-4 my-lg-5">
+    <div class="row g-4 g-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3 position-relative py-4">
         <div class="col-12 col-sm-5 col-lg-4 text-center">
             <a href="https://www.gov.uk/government/organisations/companies-house" target="_blank" aria-label="Companies House">
                 <img
-                    src={resolve('/ch_logo.jpg')}
-                    class="img-fluid d-block mx-auto"
-                    alt="Companies House logo"
-                    width="300"
-                    height="300"
-                    loading="lazy"
-                    decoding="async"
-                    sizes="(max-width: 576px) 60vw, 300px"
+                        src={resolve('/ch_logo.jpg')}
+                        class="img-fluid d-block mx-auto"
+                        alt="Companies House logo"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(max-width: 576px) 60vw, 300px"
                 />
             </a>
         </div>
@@ -81,13 +89,16 @@
                 <li>Supported recruitment via CV screening and interviews</li>
                 <li>Championed agile practices across the organisation</li>
             </ul>
+            <DownloadResume />
         </div>
     </div>
 
     <hr class="lg-hairline my-2 my-sm-3" />
 
     <!-- LocaVista / BlueFinger -->
-    <div class="row align-items-center g-4 g-lg-5 mt-4 mt-lg-5">
+    <div class="row g-4 g-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3 position-relative py-4">
+        <div class="col-12 col-sm-5 col-lg-4 text-center"></div>
+    <div class="col-12 col-sm-7 col-lg-8">
         <div class="col-12">
             <h1 class="display-6 fw-bold lh-sm mb-2">LocaVista/BlueFinger
                 <small class="text-body-secondary">1999 - 2006</small>
@@ -101,6 +112,8 @@
                 <li>Administered Oracle & PostgreSQL databases</li>
                 <li>Retained post‑acquisition; continued product development</li>
             </ul>
+            <DownloadResume />
         </div>
     </div>
-</section>
+    </div>
+</SectionBackground>

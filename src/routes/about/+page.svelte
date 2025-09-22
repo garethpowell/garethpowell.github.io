@@ -6,8 +6,7 @@
 <script lang="ts">
     import {resolve} from "$app/paths";
     import SectionBackground from '$lib/components/SectionBackground.svelte';
-
-    let CVFile = "Gareth_Powell_CV_2025.pdf";
+    import DownloadResume from "$lib/components/DownloadResume.svelte";
 </script>
 
 <SectionBackground
@@ -40,12 +39,7 @@
             <h2 class="h4 fw-semibold mt-2 mb-2">Education</h2>
             <p class="mb-1">Lancaster University</p>
             <p class="text-body-secondary mb-4">BSc Computer Science with Software Engineering (1999)</p>
-            <div class="d-grid d-sm-inline-flex gap-2">
-                <a href={resolve('/cv/' + CVFile)}
-                   class="btn btn-glass"
-                   download
-                   aria-label="Download CV for Gareth Powell">Download my CV</a>
-            </div>
+            <DownloadResume />
         </div>
     </div>
 
