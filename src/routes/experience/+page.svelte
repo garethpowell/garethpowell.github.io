@@ -6,7 +6,7 @@
 <script lang="ts">
     import { resolve } from "$app/paths";
     import SectionBackground from "$lib/components/SectionBackground.svelte";
-    import DownloadResume from "$lib/components/DownloadResume.svelte";
+    import DownloadCv from "$lib/components/DownloadCV.svelte";
 </script>
 
 <SectionBackground
@@ -54,7 +54,7 @@
                 <li>Prototyped MCP server using Spring AI integrated with CRM</li>
                 <li>Outcome: reliable platform, faster deployments, reduced complexity, stronger security</li>
             </ul>
-            <DownloadResume />
+            <DownloadCv />
         </div>
     </div>
 
@@ -89,7 +89,7 @@
                 <li>Supported recruitment via CV screening and interviews</li>
                 <li>Championed agile practices across the organisation</li>
             </ul>
-            <DownloadResume />
+            <DownloadCv />
         </div>
     </div>
 
@@ -112,7 +112,7 @@
                 <li>Administered Oracle & PostgreSQL databases</li>
                 <li>Retained post‑acquisition; continued product development</li>
             </ul>
-            <DownloadResume />
+            <DownloadCv />
         </div>
     </div>
     </div>

@@ -17,23 +17,19 @@
                     <div class="d-flex align-items-start">
                         <div>
                             <p class="mb-2">
-                                Gaz has been part of Mosaic Island’s story from the very beginning of the Columbus
-                                journey. He first
-                                contributed as an MI associate on the original implementation back in 2010, before
-                                officially joining
-                                as an employee in January 2013 when the team relocated from London to Bristol and we
-                                opened the Rombourne
-                                office in Aztec West. That adds up to an incredible 15 years of service to Mosaic
-                                Island.
+                                Gaz has been part of Mosaic Island’s story for the last 15 years - he first contributed
+                                as an MI associate (contractor) on the original implementation of our CRM system for a
+                                key client back in 2010, before officially joining as an employee in January 2013 when
+                                the engineering team relocated from London to our new Bristol office.
+
                             </p>
                             <p class="mb-2">
-                                Over those years, Gaz has played a central role and has made a huge impact on our
-                                delivery, our teams,
-                                and our clients. Rather than try to list all of his achievements here (there are far too
-                                many!), I want
-                                to take this opportunity to thank Gaz for his outstanding contribution, and to say
-                                personally that I will
-                                greatly miss working with him each day as both a colleague and a friend.
+                                During this time Gaz has played a leading role within our systems engineering - and has
+                                made a huge impact on our systems quality, software delivery, our teams, and the service
+                                delivered to our clients. Rather than try to list all of his achievements here
+                                (there are far too many!), I want to take this opportunity to thank Gaz for his
+                                outstanding contribution, and to say personally that I will greatly miss working with
+                                him each day as both a colleague and a friend.
                             </p>
                             <div class="small text-body-secondary">— Matthew Kitching, Head of Application Engineering
                             </div>

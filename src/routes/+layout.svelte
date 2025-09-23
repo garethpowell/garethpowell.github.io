@@ -2,6 +2,7 @@
     import 'bootstrap/dist/css/bootstrap.min.css';
     import '$lib/liquid-glass/liquid-glass.css';
 
+    import { resolve } from "$app/paths";
     import { onMount } from 'svelte';
     import { initTheme } from '$lib/liquid-glass';
     import { NavbarGlass, ThemeToggle, Wallpaper } from '$lib/liquid-glass';
@@ -80,24 +81,17 @@
                     <div class="col">
                         <!-- Section: Social media -->
                         <!-- Twitter -->
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
+                        <!--<a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
                            href="https://x.com/gazpowell" role="button" aria-label="Twitter" target="_blank">
                             <Fa icon={faXTwitter}/>
-                        </a>
+                        </a>-->
 
                         <!-- Bluesky -->
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
+                        <!--<a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
                            href="https://bsky.app/profile/gazpowell.bsky.social" role="button" aria-label="BlueSky"
                            target="_blank">
                             <Fa icon={faBluesky}/>
-                        </a>
-
-                        <!-- Instagram -->
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
-                           href="https://www.instagram.com/aventyret_borjar" role="button" aria-label="Instagram"
-                           target="_blank">
-                            <Fa icon={faInstagram}/>
-                        </a>
+                        </a>-->
 
                         <!-- Linkedin -->
                         <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
@@ -114,8 +108,15 @@
 
                         <!-- Email -->
                         <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
-                           href="mailto:gareth@cleancode.uk" role="button" aria-label="GitHub" target="_blank">
+                           href={resolve('/contact')} role="button" aria-label="Contact Me" target="_blank">
                             <Fa icon={faAt}/>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
+                           href="https://www.instagram.com/aventyret_borjar" role="button" aria-label="Instagram"
+                           target="_blank">
+                            <Fa icon={faInstagram}/>
                         </a>
                         <!-- Section: Social media -->
                     </div>

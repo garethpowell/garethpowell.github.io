@@ -6,7 +6,7 @@
 <script lang="ts">
     import {resolve} from "$app/paths";
     import SectionBackground from '$lib/components/SectionBackground.svelte';
-    import DownloadResume from "$lib/components/DownloadResume.svelte";
+    import DownloadCv from "$lib/components/DownloadCV.svelte";
 </script>
 
 <SectionBackground
@@ -39,7 +39,7 @@
             <h2 class="h4 fw-semibold mt-2 mb-2">Education</h2>
             <p class="mb-1">Lancaster University</p>
             <p class="text-body-secondary mb-4">BSc Computer Science with Software Engineering (1999)</p>
-            <DownloadResume />
+            <DownloadCv />
         </div>
     </div>
 
