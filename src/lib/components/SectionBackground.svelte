@@ -33,7 +33,7 @@
 >
 {#if ov}
     <div
-            class="position-absolute top-0 start-0 w-100 h-100"
+            class="position-absolute top-0 start-0 w-100 h-100 rounded-4"
             style={`background:${ov};`}
             aria-hidden="true"
     />
