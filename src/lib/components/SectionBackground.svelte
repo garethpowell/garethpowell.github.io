@@ -1,6 +1,6 @@
 <!-- src/lib/components/SectionBackground.svelte -->
 <script lang="ts">
-    type Variant = 'hex' | 'nodes' | 'blobs';
+    type Variant = 'hex' | 'nodes' | 'blobs'| 'contact';
 
     // Public props
     export let variant: Variant | null = null;     // named theme OR null if using `image`
@@ -15,7 +15,8 @@
     const variants: Record<Variant, { src: string; defaultOverlay: string | null }> = {
         hex:   { src: '/img/backgrounds/abstract-hex.svg',   defaultOverlay: 'rgba(0,0,0,.35)' },
         nodes: { src: '/img/backgrounds/abstract-nodes.svg', defaultOverlay: 'rgba(0,0,0,.30)' },
-        blobs: { src: '/img/backgrounds/abstract-blobs.svg', defaultOverlay: 'rgba(0,0,0,.30)' }
+        blobs: { src: '/img/backgrounds/abstract-blobs.svg', defaultOverlay: 'rgba(0,0,0,.30)' },
+        contact: { src: '/img/backgrounds/contact-abstract-nodes.svg', defaultOverlay: 'rgba(0,0,0,.30)' }
     };
 
     // Resolve background source + overlay

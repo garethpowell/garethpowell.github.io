@@ -58,7 +58,7 @@
 <div class="lg-glass min-vh-100 d-flex flex-column">
     <header>
         <NavbarGlass brand="Clean Code Solutions" {links}>
-            <ThemeToggle slot="end" />
+<!--            <ThemeToggle slot="end" />-->
         </NavbarGlass>
     </header>
 
@@ -80,18 +80,11 @@
                     </div>
                     <div class="col">
                         <!-- Section: Social media -->
-                        <!-- Twitter -->
-                        <!--<a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
-                           href="https://x.com/gazpowell" role="button" aria-label="Twitter" target="_blank">
-                            <Fa icon={faXTwitter}/>
-                        </a>-->
-
-                        <!-- Bluesky -->
-                        <!--<a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
-                           href="https://bsky.app/profile/gazpowell.bsky.social" role="button" aria-label="BlueSky"
-                           target="_blank">
-                            <Fa icon={faBluesky}/>
-                        </a>-->
+                        <!-- Email -->
+                        <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
+                           href={resolve('/contact')} role="button" aria-label="Contact Me">
+                            <Fa icon={faAt}/>
+                        </a>
 
                         <!-- Linkedin -->
                         <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
@@ -104,12 +97,6 @@
                         <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
                            href="https://github.com/garethpowell" role="button" aria-label="GitHub" target="_blank">
                             <Fa icon={faGithub}/>
-                        </a>
-
-                        <!-- Email -->
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1"
-                           href={resolve('/contact')} role="button" aria-label="Contact Me" target="_blank">
-                            <Fa icon={faAt}/>
                         </a>
 
                         <!-- Instagram -->
