@@ -36,7 +36,7 @@
             class="position-absolute top-0 start-0 w-100 h-100 rounded-4"
             style={`background:${ov};`}
             aria-hidden="true"
-    />
+    ></div>
 {/if}
 
 <div class="position-relative">
