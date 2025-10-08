@@ -12,7 +12,7 @@
             <h1 class="display-5 fw-bold lh-sm mb-3">Clean Code Solutions</h1>
             <p class="lead mb-0">
                 Seasoned professional Software Engineer with 20+ years delivering secure, high‑impact JVM & cloud
-                solutions. Based in Cardiff, South Wales and available for contract engagements (remote or hybrid).
+                solutions. Based in Cardiff, South Wales and available for contract engagements.
             </p>
         </div>
         <div class="col-12 col-lg-5">
