@@ -11,12 +11,12 @@
 >
     <h2 class="py-4">Testimonials</h2>
     <div class="row g-4 g-lg-5">
-        <div class="col-11 col-lg-11">
+        <div class="col-12 col-lg-11">
             <div class="card h-100">
                 <div class="card-body">
-                    <div class="d-flex align-items-start">
-                        <img src={resolve('/mattk@1.0x.webp')} alt="Portrait of Matt Kitching" height="150"
-                             class="rounded me-3 flex-shrink-0" loading="lazy" decoding="async"/>
+                    <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
+                        <img src={resolve('/mattk@1.0x.webp')} alt="Portrait of Matt Kitching"
+                             class="quote-avatar rounded me-sm-3 mb-3 mb-sm-0" loading="lazy" decoding="async"/>
                         <div>
                             <p class="mb-2">
                                 Gaz has been part of Mosaic Island’s story for the last 15 years.
@@ -45,11 +45,11 @@
     <br/>
 
     <div class="row g-4 g-lg-5">
-        <div class="col-1"></div>
-        <div class="col-11">
+        <div class="d-none d-lg-block col-lg-1"></div>
+        <div class="col-12 col-lg-11">
             <div class="card h-100 quotes-cards-listing">
                 <div class="card-body">
-                    <div class="d-flex align-items-start">
+                    <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
                         <div>
                             <p class="mb-2">I had the privilege of working with Gaz for over five years, and honestly,
                                 it was a huge part of my growth as a developer. He’ll probably say his mentoring was
@@ -63,8 +63,8 @@
                             </p>
                             <div class="small text-body-secondary">— Aditya Vulichi, Software Engineer</div>
                         </div>
-                        <img src={resolve('/Aditya@1.0x.webp')} alt="Portrait of Aditye Vulichi" height="150"
-                             class="rounded me-3 flex-shrink-0" loading="lazy" decoding="async"/>
+                        <img src={resolve('/Aditya@1.0x.webp')} alt="Portrait of Aditya Vulichi"
+                             class="quote-avatar rounded ms-sm-3 mb-3 mb-sm-0" loading="lazy" decoding="async"/>
                     </div>
                 </div>
             </div>
@@ -74,12 +74,12 @@
     <br/>
 
     <div class="row g-4 g-lg-5">
-        <div class="col-11">
+        <div class="col-12 col-lg-11">
             <div class="card h-100 quotes-cards-listing">
                 <div class="card-body">
-                    <div class="d-flex align-items-start">
-                        <img src={resolve('/Group-349.webp')} alt="Portrait of Natasha Ogden" height="150"
-                             class="rounded me-3 flex-shrink-0" loading="lazy" decoding="async"/>
+                    <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
+                        <img src={resolve('/Group-349.webp')} alt="Portrait of Natasha Ogden"
+                             class="quote-avatar rounded me-sm-3 mb-3 mb-sm-0" loading="lazy" decoding="async"/>
                         <div>
                             <p class="mb-2">Gareth has been such a huge part of Mosaic Island’s journey – 15 years of
                                 dedication and hard work resulting in a huge impact on our delivery, in particular,
@@ -100,18 +100,18 @@
     <br/>
 
     <div class="row g-4 g-lg-5">
-        <div class="col-1 col-lg-1"></div>
-        <div class="col-11 col-lg-11">
+        <div class="d-none d-lg-block col-lg-1"></div>
+        <div class="col-12 col-lg-11">
             <div class="card h-100 quotes-cards-listing">
                 <div class="card-body">
-                    <div class="d-flex align-items-start">
+                    <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
                         <div>
                             <p class="mb-2">It's been a long journey in which you have played a fabulous role. So many
                                 nights out in London to remember.</p>
                             <div class="small text-body-secondary">— Matt Lock, Business Development Director</div>
                         </div>
-                        <img src={resolve('/Group-347.webp')} alt="Portrait of Matt Lock" height="150"
-                             class="rounded me-3 flex-shrink-0" loading="lazy" decoding="async"/>
+                        <img src={resolve('/Group-347.webp')} alt="Portrait of Matt Lock"
+                             class="quote-avatar rounded ms-sm-3 mb-3 mb-sm-0" loading="lazy" decoding="async"/>
                     </div>
                 </div>
             </div>
@@ -120,4 +120,17 @@
 
 
 </SectionBackground>
+
+<style>
+    .quote-avatar {
+        width: 120px;
+        height: auto;
+    }
+
+    @media (min-width: 576px) {
+        .quote-avatar {
+            width: 150px;
+        }
+    }
+</style>
 
