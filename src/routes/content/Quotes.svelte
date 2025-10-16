@@ -106,8 +106,14 @@
                 <div class="card-body">
                     <div class="d-flex flex-column flex-sm-row align-items-start gap-3">
                         <div>
-                            <p class="mb-2">It's been a long journey in which you have played a fabulous role. So many
-                                nights out in London to remember.</p>
+                            <p class="mb-2">Gaz has worked for Mosaic Island almost since the start of the company
+                                and has been a hugely loyal and dedicated member of the team.</p>
+                            <p class="mb-2">
+                                There is little he doesn’t know about software development and technical leadership
+                                delivered in the right way to ensure architectural alignment and maintainability.</p>
+                            <p class="mb-2">
+                                As well as his technical credibility,
+                                I will miss him as a colleague who I enjoyed working with!</p>
                             <div class="small text-body-secondary">— Matt Lock, Business Development Director</div>
                         </div>
                         <img src={resolve('/Group-347.webp')} alt="Portrait of Matt Lock"
